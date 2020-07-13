@@ -4,7 +4,7 @@ $error ="";// was giving warning undefined
 
 if(array_key_exists('city',$_GET)){
     
-    $urlContents = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['city'])."&appid=0a53d3ad17820ef6c53cc9461d1a5bbd");
+    $urlContents = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['city'])."&appid=your_app_id");
 
 
     $weatherArray = json_decode($urlContents,true);
